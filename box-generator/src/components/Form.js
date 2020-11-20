@@ -27,6 +27,10 @@ const Form = (props) => {
 
         console.log(all_colors);
 
+        // Ninja Bonus: clear out the color input on successful submission.
+        //to clear the input box after submission, we need to set the input box to an empty string
+        setColor('');
+
     }
 
     return (
