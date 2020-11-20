@@ -16,12 +16,20 @@ const Display = (props) => {
             {
                 all_colors.map((color, i) => {
                     return (
-                        <div key={i} className="block" style={{ backgroundColor: color.color, height: '200px', width: '200px', margin: '4px' }}>
+                        // <div key={i} className="block" style={{ backgroundColor: color.color, height: '200px', width: '200px', margin: '4px' }}>
 
-                            Color entered: <h3>{color.color}</h3>
+                        //     Color entered: <h3>{color.color}</h3>
 
 
-                        </div>
+                        // </div>
+
+                        <div key={i} className="block" style={{ backgroundColor: color.color, height: color.box_size+"px", width: color.box_size+"px", margin: '4px' }}>
+
+                        Color entered: <h3>{color.color}</h3>
+                        this is the size: {color.box_size+"px"}
+
+
+                    </div>
                     )
                 })
 
